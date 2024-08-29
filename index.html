@@ -8,13 +8,26 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #faf6f6;
         }
         header, footer {
-            background-color: #fc0000;
-            color: white;
-            text-align: center;
+            background-color: hsl(0, 0%, 100%);
+            color: rgb(14, 14, 14);
+            text-align: center; 
             padding: 20px 0;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+        }
+        header img:first-of-type {
+            left: 20px; 
+        }
+        header img:last-of-type {
+            right: 20px; 
         }
         nav {
             background-color: #ffffff;
@@ -45,7 +58,7 @@
             color: #003366;
         }
         h3 {
-            color: #0056b3;
+            color: #080808;
         }
         .highlight {
             background-color: #ffeb3b;
@@ -70,38 +83,39 @@
             margin: 10px 0;
         }
         aside {
-            background-color: #e6e6e6;
+            background-color: #f9f7f7;
             padding: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid #0066f5;
             margin-top: 30px;
         }
         footer a {
-            color: white;
+            color: rgb(24, 23, 23);
             text-decoration: none;
             margin: 0 10px;
         }
     </style>
 </head>
 <body>
+    
     <header>
         <h1>Deportes UdB</h1>
-        <p>Explora los deportes más populares en nuestra universidad</p>
-        <img src="Recursos/logo Udb.png"   width="90px">
+        <p><b>Explora los deportes más populares en nuestra universidad</b></p>
+        <img src="Recursos/logo Udb.png" alt="Logo UDB" width="180px"> 
+        <img src="Recursos/logo bh.avif" alt="buho" width="150px"> 
     </header>
-
     <nav>
         <ul>
-            <li><a href="#futbol">Fútbol Sala</a></li>
-            <li><a href="#baloncesto">Baloncesto</a></li>
-            <li><a href="#voleibol">Voleibol</a></li>
-            <li><a href="#tenis">Tenis</a></li>
-        </ul>
+            <li><a href="#futbol"><b>Fútbol Sala</b></a></li>
+            <li><a href="#baloncesto"><b>Baloncesto</b></a></li>
+            <li><a href="#voleibol"><b>Voleibol</b></a></li>
+            <li><a href="#tenis"><b>Tenis</b></a></li>
+        </ul>        
     </nav>
     <main>
         <section id="futbol" class="Deportes">
             <h2>Fútbol Sala</h2>
-            <p>El fútbol sala es un deporte que se juega en interiores, conocido por su rapidez y habilidad técnica. Es muy popular en nuestra universidad.</p>
-            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041483.png" alt="Fútbol Sala">
+            <p>Es una variante del fútbol que se juega en un campo más pequeño y en interiores, generalmente con cinco jugadores por equipo. 
+                Se caracteriza por su ritmo rápido, el uso de paredes y la necesidad de habilidades técnicas y tácticas precisas.</p>
             <table>
                 <thead>
                     <tr>
@@ -143,30 +157,37 @@
                     </tr>
                 </tfoot>
             </table>
+            <img src="Recursos/futsal.jpg" alt="Fútbol Sala">
             <aside>
                 <h3>Para más información sobre futbol sala</h3>
-                <p>Visita  <a href="https://es.wikipedia.org/wiki/F%C3%BAtbol_sala" target="_blank">Wikipedia</a></p>
+                <p>Visita  <a href="https://es.wikipedia.org/wiki/F%C3%BAtbol_sala"
+                     target="_blank">Wikipedia</a></p>
             </aside>
         </section>
 
         <section id="baloncesto">
             <h2>Baloncesto</h2>
-            <p>El baloncesto es un deporte de equipo en el que se enfrentan dos conjuntos de cinco jugadores cada uno. El objetivo es encestar el balón en la canasta del equipo contrario.</p>
-            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041467.png" alt="Baloncesto">
+            <p>Es un deporte de equipo en el que dos conjuntos de cinco jugadores compiten para anotar puntos lanzando una pelota a través de un aro elevado. 
+                El juego se desarrolla en una cancha rectangular y combina velocidad, agilidad y habilidades de manejo del balón.</p>
+            <img src="Recursos/baloncesto.png" alt="Baloncesto">
             <p>Para más detalles sobre las reglas del baloncesto, Dale click <a href="https://es.wikipedia.org/wiki/Baloncesto" target="_blank">aquí</a>.</p>
         </section>
 
         <section id="voleibol">
             <h2>Voleibol</h2>
-            <p>El voleibol es un deporte de equipo que se juega con una pelota en la que dos equipos de seis jugadores se enfrentan separados por una red central.</p>
-            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041466.png" alt="Voleibol">
+            <p>Este deporte se juega entre dos equipos de seis jugadores cada uno, separados por una red. 
+                El objetivo es enviar el balón por encima de la red y hacer que toque el suelo del lado contrario. 
+                Requiere coordinación, trabajo en equipo y habilidad para realizar pases, bloqueos y remates.</p>
+            <img src="Recursos/voleibol.png" alt="Voleibol">
             <p>Aprende más sobre el voleibol <a href="https://es.wikipedia.org/wiki/Voleibol" target="_blank">aquí</a>.</p>
         </section>
 
         <section id="tenis">
             <h2>Tenis</h2>
-            <p>El tenis es un deporte de raqueta que se puede jugar en modo individual (uno contra uno) o en parejas (dos contra dos).</p>
-            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041468.png" alt="Tenis">
+            <p>Es un deporte de raqueta que puede jugarse entre dos jugadores (individual) o entre dos parejas (dobles). 
+                El objetivo es golpear la pelota para que pase por encima de la red y toque el suelo en el lado del oponente, 
+                con el fin de ganar puntos. Es un deporte que demanda precisión, resistencia y estrategia.</p>
+            <img src="Recursos/tenis.png" alt="Tenis">
             <p>Descubre las reglas y técnicas del tenis <a href="https://es.wikipedia.org/wiki/Tenis" target="_blank">aquí</a>.</p>
         </section>
     </main>
@@ -174,9 +195,8 @@
     <footer>
         <p>&copy; 2024 Stand Deportivo UdB</p>
         <p>Visítanos en nuestras redes: 
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
-            <a href="https://twitter.com/" target="_blank">Twitter</a> |
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100078411818519&mibextid=LQQJ4d" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/yesidjimenez_30?igsh=Y3UxaWJsZXlyYnF6" target="_blank">Instagram</a>
         </p>
     </footer>
 </body>
