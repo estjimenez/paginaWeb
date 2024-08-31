@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #faf6f6;
+        }
+        header, footer {
+            background-color: hsl(0, 0%, 100%);
+            color: rgb(14, 14, 14);
+            text-align: center; 
+            padding: 20px 0;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+        }
+        header img:first-of-type {
+            left: 20px; 
+        }
+        header img:last-of-type {
+            right: 20px; 
+        }
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(3, 1, 1);
+            text-decoration: none;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #003366;
+        }
+        h3 {
+            color: #080808;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        aside {
+            background-color: #f9f7f7;
+            padding: 15px;
+            border: 1px solid #0066f5;
+            margin-top: 30px;
+        }
+        footer a {
+            color: rgb(24, 23, 23);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+  
